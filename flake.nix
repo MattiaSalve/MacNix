@@ -1,9 +1,7 @@
 {
   description = "Nix for macOS configuration";
-
   # Want to know Nix in details? Looking for a beginner-friendly tutorial?
   # Check out https://github.com/ryan4yin/nixos-and-flakes-book !
-
   # the nixConfig here only affects the flake itself, not the system configuration!
   nixConfig = {
     substituters = [
@@ -52,11 +50,11 @@
         ./modules/nix-core.nix
         ./modules/system.nix
         ./modules/apps.nix
-
         ./modules/host-users.nix
       ];
     };
     # nix code formatter
     formatter.${system} = nixpkgs.legacyPackages.${system}.alejandra;
+
   };
 }

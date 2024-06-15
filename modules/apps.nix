@@ -27,7 +27,6 @@ nixpkgs.config = {
         wallust
         lazygit
         jetbrains-mono
-        gimp
     ];
 
 # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
@@ -74,7 +73,6 @@ nixpkgs.config = {
             "alacritty"
             "obsidian"
             "firefox"
-            "windscribe"
         ];
     };
 }
